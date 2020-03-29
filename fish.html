@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title ="Animal Crossing New Horrizons Bell Converter"></title>
+	<link rel="stylesheet" type="text/css" href="construct.css">
+	<link rel="stylesheet" type="text/html" href="homepage.html">
+</head>
+<body background="background.png">
+	<div class="leaf">
+		<img src="Animal_Crossing_Leaf.png" height="180px" width="180px">
+	</div>
+	<div class="bell">
+		<img src="bell.png" height="180px" width="180px">
+	</div>
+	<div class="container">
+		<div style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+			<div class="vertical-center">
+				<span style="font-size: 6vw; color: black;">
+					<B>Animal Crossing New Horizons</B>
+				</span>
+				<span style="font-size: 7vw; color: #EFB715;">
+					<B>Bell Calculator</B>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="back-button" style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+		<span style="font-size: 3vw; color: #5D90EB;">
+			<B><a href="homepage.html" style="text-decoration: none;" >Home</a></B>
+		</span>
+	</div>
+	<br><br><br>
+	<script>
+		var sum = 0;
+		function totalbellvalue(fish){
+			var fishtype = Number(fish.getAttribute("data-fish"));
+			sum = sum + fishtype;
+			document.getElementById("Total Bells").innerHTML = sum;
+		}
+		function reset() {
+			sum = 0;
+			document.getElementById("Total Bells").innerHTML = 0;
+		}
+	</script>
+	<div class="fish-constraints">
+		<img src="assets/fish/Anchovy.png" onclick="totalbellvalue
+		(this)"id="Anchovy" data-fish="200" class="fish" title="Anchovy" hspace="10">
+		
+	<img src="assets/fish/Angelfish.png" onclick="totalbellvalue
+		(this)"id="Angelfish" data-fish="3000" class="fish" title="Angelfish">
+
+	<img src="assets/fish/Arapaima.png" onclick="totalbellvalue
+	(this)"id="Arapaima" data-fish="10000" class="fish" title="Arapaima" hspace="10">
+
+	<img src="assets/fish/Arowana.png" onclick="totalbellvalue
+	(this)"id="Arowana" data-fish="10000" class="fish" title="Arowana">
+
+	<img src="assets/fish/Barred_Knifejaw.png" onclick="totalbellvalue
+	(this)"id="Barred_Knifejaw" data-fish="5000" class="fish" title="Barred_Knifejaw" hspace="10">
+
+	<img src="assets/fish/Barreleye.png" onclick="totalbellvalue
+	(this)"id="Barreleye" data-fish="15000" class="fish" title="Barreleye">
+
+	<img src="assets/fish/Betta.png" onclick="totalbellvalue
+	(this)"id="Betta" data-fish="2500" class="fish" title="Betta" hspace="10">
+
+	<img src="assets/fish/Bitterling.png" onclick="totalbellvalue
+	(this)"id="Bitterling" data-fish="900" class="fish" title="Bitterling">
+
+	<img src="assets/fish/Black_Bass.png" onclick="totalbellvalue
+	(this)"id="Black_Bass" data-fish="400" class="fish" title="Black_Bass" hspace="10">
+
+	<img src="assets/fish/Blowfish.png" onclick="totalbellvalue
+	(this)"id="Blowfish" data-fish="5000" class="fish" title="Blowfish">
+
+	<img src="assets/fish/Blue_Marlin.png" onclick="totalbellvalue
+	(this)"id="Blue_Marlin" data-fish="10000" class="fish" title="Blue_Marlin" hspace="10">
+
+	<img src="assets/fish/Bluegil.png" onclick="totalbellvalue
+	(this)"id="Bluegil" data-fish="180" class="fish" title="Bluegil">
+
+	<img src="assets/fish/Butterfly_Fish.png" onclick="totalbellvalue
+	(this)"id="Butterfly_Fish" data-fish="1000" class="fish" title="Butterfly_Fish" hspace="10">
+
+	<img src="assets/fish/Carp.png" onclick="totalbellvalue
+	(this)"id="Carp" data-fish="300" class="fish" title="Carp">
+
+	<img src="assets/fish/Catfish.png" onclick="totalbellvalue
+	(this)"id="Catfish" data-fish="800" class="fish" title="Catfish" hspace="10">
+
+	<img src="assets/fish/Char.png" onclick="totalbellvalue
+	(this)"id="Char" data-fish="3800" class="fish" title="Char">
+
+	<img src="assets/fish/Cherry_Salmon.png" onclick="totalbellvalue
+	(this)"id="Cherry_Salmon" data-fish="1000" class="fish" title="Cherry_Salmon" hspace="10">
+
+	<img src="assets/fish/Clownfish.png" onclick="totalbellvalue
+	(this)"id="Clownfish" data-fish="650" class="fish" title="Clownfish">
+
+	<img src="assets/fish/Coelacanth.png" onclick="totalbellvalue
+	(this)"id="Coelacanth" data-fish="15000" class="fish" title="Coelacanth" hspace="10">
+
+	<img src="assets/fish/Crawfish.png" onclick="totalbellvalue
+	(this)"id="Crawfish" data-fish="200" class="fish" title="Crawfish">
+
+	<img src="assets/fish/Crucian_Carp.png" onclick="totalbellvalue
+	(this)"id="Crucian_Carp" data-fish="160" class="fish" title="Crucian_Carp" hspace="10">
+
+	<img src="assets/fish/Dab.png" onclick="totalbellvalue
+	(this)"id="Dab" data-fish="300" class="fish" title="Dab">
+
+	<img src="assets/fish/Dace.png" onclick="totalbellvalue
+	(this)"id="Dace" data-fish="240" class="fish" title="Dace" hspace="10">
+
+	<img src="assets/fish/Dorado.png" onclick="totalbellvalue
+	(this)"id="Dorado" data-fish="15000" class="fish" title="Dorado">
+
+	<img src="assets/fish/Football_Fish.png" onclick="totalbellvalue
+	(this)"id="Football_Fish" data-fish="2500" class="fish" title="Football_Fish" hspace="10">
+
+	<img src="assets/fish/Freshwater_Goby.png" onclick="totalbellvalue
+	(this)"id="Freshwater_Goby" data-fish="400" class="fish" title="Freshwater_Goby">
+
+	<img src="assets/fish/Frog.png" onclick="totalbellvalue
+	(this)"id="Frog" data-fish="120" class="fish" title="Frog" hspace="10">
+
+	<img src="assets/fish/Gar.png" onclick="totalbellvalue
+	(this)"id="Gar" data-fish="6000" class="fish" title="Gar">
+
+	<img src="assets/fish/Giant_Snakehead.png" onclick="totalbellvalue
+	(this)"id="Giant_Snakehead" data-fish="5500" class="fish" title="Giant_Snakehead" hspace="10">
+
+	<img src="assets/fish/Giant_Trevally.png" onclick="totalbellvalue
+	(this)"id="Giant_Trevally" data-fish="4500" class="fish" title="Giant_Trevally">
+
+	<img src="assets/fish/Golden_Trout.png" onclick="totalbellvalue
+	(this)"id="Golden_Trout" data-fish="15000" class="fish" title="Golden_Trout" hspace="10">
+	
+	<img src="assets/fish/Goldfish.png" onclick="totalbellvalue
+	(this)"id="Goldfish" data-fish="1300" class="fish" title="Goldfish">
+
+	<img src="assets/fish/Great_White_Shark.png" onclick="totalbellvalue
+	(this)"id="Great_White_Shark" data-fish="15000" class="fish" title="Great_White_Shark" hspace="10">
+
+	<img src="assets/fish/Guppy.png" onclick="totalbellvalue
+	(this)"id="Guppy" data-fish="1300" class="fish" title="Guppy">
+
+	<img src="assets/fish/Hammerhead_Shark.png" onclick="totalbellvalue
+	(this)"id="Hammerhead_Shark" data-fish="8000" class="fish" title="Hammerhead_Shark" hspace="10">
+
+	<img src="assets/fish/Horse_Mackerel.png" onclick="totalbellvalue
+	(this)"id="Horse_Mackerel" data-fish="150" class="fish" title="Horse_Mackerel">
+
+	<img src="assets/fish/Killifish.png" onclick="totalbellvalue
+	(this)"id="Killifish" data-fish="300" class="fish" title="Killifish" hspace="10">
+
+	<img src="assets/fish/King_Salmon.png" onclick="totalbellvalue
+	(this)"id="King_Salmon" data-fish="1800" class="fish" title="King_Salmon">
+
+	<img src="assets/fish/Koi.png" onclick="totalbellvalue
+	(this)"id="Koi" data-fish="4000" class="fish" title="Koi" hspace="10">
+
+	<img src="assets/fish/Loach.png" onclick="totalbellvalue
+	(this)"id="Loach" data-fish="400" class="fish" title="Loach">
+
+	<img src="assets/fish/Mahi-Mahi.png" onclick="totalbellvalue
+	(this)"id="Mahi-Mahi" data-fish="6000" class="fish" title="Mahi-Mahi" hspace="10">
+
+	<img src="assets/fish/Mitten_Crab.png" onclick="totalbellvalue
+	(this)"id="Mitten_Crab" data-fish="2000" class="fish" title="Mitten_Crab">
+
+	<img src="assets/fish/Moray_Eel.png" onclick="totalbellvalue
+	(this)"id="Moray_Eel" data-fish="2000" class="fish" title="Moray_Eel" hspace="10">
+
+	<img src="assets/fish/Napoleonfish_.png" onclick="totalbellvalue
+	(this)"id="Napoleonfish" data-fish="10000" class="fish" title="Napoleonfish">
+
+	<img src="assets/fish/Neon_Tetra.png" onclick="totalbellvalue
+	(this)"id="Neon_Tetra" data-fish="500" class="fish" title="Neon_Tetra" hspace="10">
+
+	<img src="assets/fish/Nibble_Fish.png" onclick="totalbellvalue
+	(this)"id="Nibble_Fish" data-fish="1500" class="fish" title="Nibble_Fish">
+
+	<img src="assets/fish/Oarfish.png" onclick="totalbellvalue
+	(this)"id="Oarfish" data-fish="9000" class="fish" title="Oarfish" hspace="10">
+
+	<img src="assets/fish/Ocean_Sunfish.png" onclick="totalbellvalue
+	(this)"id="Ocean_Sunfish" data-fish="4000" class="fish" title="Ocean_Sunfish">
+
+	<img src="assets/fish/Olive_Flounder.png" onclick="totalbellvalue
+	(this)"id="Olive_Flounder" data-fish="800" class="fish" title="Olive_Flounder" hspace="10">
+
+	<img src="assets/fish/Pale_Chub.png" onclick="totalbellvalue
+	(this)"id="Pale_Chub" data-fish="200" class="fish" title="Pale_Chub">
+
+	<img src="assets/fish/Pike.png" onclick="totalbellvalue
+	(this)"id="Pike" data-fish="1800" class="fish" title="Pike" hspace="10">
+
+	<img src="assets/fish/Piranha.png" onclick="totalbellvalue
+	(this)"id="Piranha" data-fish="2500" class="fish" title="Piranha">
+
+	<img src="assets/fish/Pond_Smelt.png" onclick="totalbellvalue
+	(this)"id="Pond_Smelt" data-fish="500" class="fish" title="Pond_Smelt" hspace="10">
+
+	<img src="assets/fish/Popeyed_Goldfish.png" onclick="totalbellvalue
+	(this)"id="Popeyed_Goldfish" data-fish="1300" class="fish" title="Popeyed_Goldfish">
+
+	<img src="assets/fish/Puffer_Fish.png" onclick="totalbellvalue
+	(this)"id="Puffer_Fish" data-fish="250" class="fish" title="Puffer_Fish" hspace="10">
+
+	<img src="assets/fish/Rainbowfish.png" onclick="totalbellvalue
+	(this)"id="Rainbowfish" data-fish="800" class="fish" title="Rainbowfish">
+
+	<img src="assets/fish/Ranchu_Goldfish.png" onclick="totalbellvalue
+	(this)"id="Ranchu_Goldfish" data-fish="4500" class="fish" title="Ranchu_Goldfish" hspace="10">
+
+	<img src="assets/fish/Ray.png" onclick="totalbellvalue
+	(this)"id="Ray" data-fish="3000" class="fish" title="Ray">
+
+	<img src="assets/fish/Red_Snapper.png" onclick="totalbellvalue
+	(this)"id="Red_Snapper" data-fish="3000" class="fish" title="Red_Snapper" hspace="10">
+
+	<img src="assets/fish/Ribbon_Eel.png" onclick="totalbellvalue
+	(this)"id="Ribbon_Eel" data-fish="600" class="fish" title="Ribbon_Eel">
+
+	<img src="assets/fish/Saddled_Bichir.png" onclick="totalbellvalue
+	(this)"id="Saddled_Bichir" data-fish="4000" class="fish" title="Saddled_Bichir" hspace="10">
+
+	<img src="assets/fish/Salmon.png" onclick="totalbellvalue
+	(this)"id="Salmon" data-fish="700" class="fish" title="Salmon">
+
+	<img src="assets/fish/Saw_Shark.png" onclick="totalbellvalue
+	(this)"id="Saw_Shark" data-fish="12000" class="fish" title="Saw_Shark" hspace="10">
+
+	<img src="assets/fish/Sea_Bass.png" onclick="totalbellvalue
+	(this)"id="Sea_Bass" data-fish="400" class="fish" title="Sea_Bass">
+
+	<img src="assets/fish/Sea_Butterfly.png" onclick="totalbellvalue
+	(this)"id="Sea_Butterfly" data-fish="1000" class="fish" title="Sea_Butterfly" hspace="10">
+
+	<img src="assets/fish/Seahorse.png" onclick="totalbellvalue
+	(this)"id="Seahorse" data-fish="1100" class="fish" title="Seahorse">
+
+	<img src="assets/fish/Snapping.png" onclick="totalbellvalue
+	(this)"id="Snapping_Turtle" data-fish="5000" class="fish" title="Snapping_Turtle" hspace="10">
+
+	<img src="assets/fish/Soft-Shelled_Turtle.png" onclick="totalbellvalue
+	(this)"id="Soft-Shelled_Turtle" data-fish="3750" class="fish" title="Soft-Shelled_Turtle">
+
+	<img src="assets/fish/Squid.png" onclick="totalbellvalue
+	(this)"id="Squid" data-fish="500" class="fish" title="Squid" hspace="10">
+
+	<img src="assets/fish/Stringfish.png" onclick="totalbellvalue
+	(this)"id="Stringfish" data-fish="15000" class="fish" title="Stringfish">
+
+	<img src="assets/fish/Sturgeon.png" onclick="totalbellvalue
+	(this)"id="Sturgeon" data-fish="10000" class="fish" title="Sturgeon" hspace="10">
+
+	<img src="assets/fish/Suckerfish.png" onclick="totalbellvalue
+	(this)"id="Suckerfish" data-fish="1500" class="fish" title="Suckerfish">
+
+	<img src="assets/fish/Surgeonfish.png" onclick="totalbellvalue
+	(this)"id="Surgeonfish" data-fish="1000" class="fish" title="Surgeonfish" hspace="10">
+
+	<img src="assets/fish/Sweetfish.png" onclick="totalbellvalue
+	(this)"id="Sweetfish" data-fish="900" class="fish" title="Sweetfish">
+
+	<img src="assets/fish/Tadpole.png" onclick="totalbellvalue
+	(this)"id="Tadpole" data-fish="100" class="fish" title="Tadpole" hspace="10">
+
+	<img src="assets/fish/Tilapia.png" onclick="totalbellvalue
+	(this)"id="Tilapia" data-fish="800" class="fish" title="Tilapia">
+
+	<img src="assets/fish/Tuna.png" onclick="totalbellvalue
+	(this)"id="Tuna" data-fish="7000" class="fish" title="Tuna" hspace="10">
+
+	<img src="assets/fish/Whale_Shark.png" onclick="totalbellvalue
+	(this)"id="Whale_Shark" data-fish="13000" class="fish" title="Whale_Shark">
+
+	<img src="assets/fish/Yellow_Perch.png" onclick="totalbellvalue
+	(this)"id="Yellow_Perch" data-fish="300" class="fish" title="Yellow_Perch" hspace="10">
+
+	<img src="assets/fish/Zebra_Turkeyfish.png" onclick="totalbellvalue
+	(this)"id="Zebra_Turkeyfish" data-fish="500" class="fish" title="Zebra_Turkeyfish">
+
+
+	</div>
+
+	<h1>Total Bells: <span id="Total Bells"></span></h1>
+	<input type="button" onclick="reset()" name="Reset" class="button" value="Reset">
+	<h2>Fish are in alphabetical order, you can hover over top of each fish to see its name.</h2>
+	<h2>Click on each fish to add up its value.</h2>

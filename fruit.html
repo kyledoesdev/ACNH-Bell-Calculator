@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animal Crossing New Horizons Fruit Calculator</title>
+	<link rel="stylesheet" type="text/css" href="construct.css">
+	<link rel="stylesheet" type="text/html" href="homepage.html">
+</head>
+<body background="background.png">
+	<div class="leaf">
+		<img src="Animal_Crossing_Leaf.png" height="180px" width="180px">
+	</div>
+	<div class="bell">
+		<img src="bell.png" height="180px" width="180px">
+	</div>
+	<div class="container">
+		<div style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+			<div class="vertical-center">
+				<span style="font-size: 6vw; color: black;">
+					<B>Animal Crossing New Horizons</B>
+				</span>
+				<span style="font-size: 7vw; color: #EFB715;">
+					<B>Bell Calculator</B>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="back-button" style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+		<span style="font-size: 3vw; color: #5D90EB;">
+			<B><a href="homepage.html" style="text-decoration: none;" >Home</a></B>
+		</span>
+	</div>
+
+	<script>
+		var sum = 0;
+		function totalbellvalue(fruit){
+			var fruittype = Number(fruit.getAttribute("data-fruit"));
+			sum = sum + fruittype;
+			document.getElementById("Total Bells").innerHTML = sum;
+		}
+		var isNativeState = true;
+		function change(){
+			let fruits = Array.from(document.getElementsByClassName("fruit"));
+			if (isNativeState) {
+				isNativeState = false;
+				fruits.forEach(fruit => {
+					fruit.setAttribute("data-fruit", "500");
+				});
+			}
+			else {
+				isNativeState = true;
+				fruits.forEach(fruit => {
+					fruit.setAttribute("data-fruit", "100");
+				});
+			}
+		}
+		function reset() {
+			sum = 0;
+			document.getElementById("Total Bells").innerHTML = 0;
+		}
+		function changeText() {
+            var btn = document.getElementById("flipper");
+            if (btn.value == "Native") {
+                btn.value = "Foreign";
+                btn.innerHTML = "Foreign";
+            }
+            else {
+                btn.value = "Native";
+                btn.innerHTML = "Native";
+            }
+        }
+	</script>
+	<div class="pos-fruit">
+		<img src="assets/fruit/apple.png" height="250" width="250" onclick="totalbellvalue(this)" id="apple" data-fruit="100" class="fruit">
+		<img src="assets/fruit/cherry.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="cherry" data-fruit="100" class="fruit">
+		<img src="assets/fruit/coconut.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="coconut" data-fruit="250">
+		<img src="assets/fruit/orange.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="orange" data-fruit="100" class="fruit">
+		<img src="assets/fruit/peach.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="peach" data-fruit="100" class="fruit">
+		<img src="assets/fruit/pear.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="pear" data-fruit="100" class="fruit">
+	</div>
+	<br>
+
+	<div style="font-family:calibri,calibri,serif;" onclick="changeText()">
+		<input type="button" value="Native" id="flipper" onclick="change()"name="Native" class="button">
+	</div>
+
+	<h1>Total Bells: <span id="Total Bells"></span></h1>
+	<input type="button" onclick="reset()" name="Reset" class="button" value="Reset">
+</body>
+</html>

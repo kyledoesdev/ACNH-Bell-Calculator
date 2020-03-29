@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animal Crossing New Horizons Fossil Calculator</title>
+	<link rel="stylesheet" type="text/css" href="construct.css">
+	<link rel="stylesheet" type="text/html" href="homepage.html">
+</head>
+<body background="background.png">
+	<div class="leaf">
+		<img src="Animal_Crossing_Leaf.png" height="180px" width="180px">
+	</div>
+	<div class="bell">
+		<img src="bell.png" height="180px" width="180px">
+	</div>
+	<div class="container">
+		<div style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+			<div class="vertical-center">
+				<span style="font-size: 6vw; color: black;">
+					<B>Animal Crossing New Horizons</B>
+				</span>
+				<span style="font-size: 7vw; color: #EFB715;">
+					<B>Bell Calculator</B>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="back-button" style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+		<span style="font-size: 3vw; color: #5D90EB;">
+			<B><a href="homepage.html" style="text-decoration: none;" >Home</a></B>
+		</span>
+	</div>
+	<br><br><br>
+
+	<script>
+		var sum = 0;
+		function totalbellvalue(fossil){
+			var fossiltype = Number(fossil.getAttribute("data-fossil"));
+			sum = sum + fossiltype;
+			document.getElementById("Total Bells").innerHTML = sum;
+		}
+		function reset() {
+			sum = 0;
+			document.getElementById("Total Bells").innerHTML = 0;
+		}
+	</script>
+	<div style="font-family:calibri,calibri,serif;">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1200"value="Amber"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1100"value="Ammonite"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3500"value="anykylosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="anykylosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2500"value="anykylosaurus tail"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5000"value="apatosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="apatosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="apatosaurus tail"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1300"value="archaeopteryx"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="archelon skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3500"value="archelon torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1100"value="coprolite"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5500"value="dimetrodon skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5000"value="dimetrodon torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="dimetrodon tail"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1400"value="dinosaur egg"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1000"value="dinosaur track"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5000"value="diplodocus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5000"value="diplodocus neck"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="diplodocus chest"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="diplodocus hip"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="diplodocus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1000"value="fern fossil"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2500"value="chthyosaur skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2000"value="chthyosaur torso"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="iquanodon skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3500"value="iquanodon torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="iquanodon tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="mammoth skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2500"value="mammoth torso"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="megaceros skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3500"value="megaceros torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="megaceros tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="pachysaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3500"value="pachysaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="pachysaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3500"value="parasaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="parasaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2500"value="parasaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1100"value="pecking man"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="plesiosaur skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="plesiosaur torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="plesiosaur tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="pteranodon right wing"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="pteranodon skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="pteranodon left wing"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="velociraptor(aka raptor) skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2500"value="velociraptor(aka raptor) torso"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2500"value="sabretooth tiger skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2000"value="sabretooth tiger torso"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1000"value="shark tooth"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="spinosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="spinosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2000"value="spinosaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5000"value="stegosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="stegosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4000"value="stegosaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3500"value="styracosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="3000"value="styracosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="2500"value="styracosaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="6000"value="triceratops skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5500"value="triceratops torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="4500"value="triceratops tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="1300"value="trilobite"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="6000"value="tyrannosaurus rex skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5500"value="tyrannosaurus rex torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-fossil="5000"value="tyrannosaurus rex tail"class="button">
+
+	</div>
+
+	<h1>Total Bells: <span id="Total Bells"></span></h1>
+	<input type="button" onclick="reset()" name="Reset" class="button" value="Reset">

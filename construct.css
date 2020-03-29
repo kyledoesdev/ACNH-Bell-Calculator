@@ -1,0 +1,66 @@
+#title span{
+display: block;
+}
+#title {
+padding-top: 50px;
+height: 200px;
+background-size: cover;
+text-align: center;
+}
+.leaf {
+position: absolute;
+top: 8px;
+left: 16px;
+}
+.bell{
+position: absolute;
+top: 8px;
+right: 16px;
+}
+.container {
+ position: relative;
+}
+.vertical-center{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 100%;
+}
+.back-button{
+position: absolute;
+top: 4px;
+left: 16px;
+}
+.pos-fruit{
+padding-left: 150px;
+}
+.button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.fish{
+padding-top: 40px
+}
+.fish-constraints{
+	left: 40px;
+}
+.bug-constraints{
+	left: 40px;
+}
+.bugs{
+
+}
+.fossils{
+
+}
+.fruit{
+
+}
