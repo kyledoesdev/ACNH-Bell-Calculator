@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animal Crossing New Horizons Fruit Calculator</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="construct.css">
+	<link rel="stylesheet" type="text/html" href="index.html">
+</head>
+<body background="background.png">
+	<div class="leaf">
+		<img src="Animal_Crossing_Leaf.png" height="180px" width="180px">
+	</div>
+	<div class="bell">
+		<img src="bell.png" height="180px" width="180px">
+	</div>
+	<div class="container">
+		<div style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+			<div class="vertical-center">
+				<span style="font-size: 6vw; color: black;">
+					<B>Animal Crossing New Horizons</B>
+				</span>
+				<span style="font-size: 7vw; color: #EFB715;">
+					<B>Bell Calculator</B>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="back-button" style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+		<span style="font-size: 3vw; color: #5D90EB;">
+			<B><a href="index.html" style="text-decoration: none;" >Home</a></B>
+		</span>
+	</div>
+
+	<br><br><br>
+	<script>
+		var sum = 0;
+		function totalbellvalue(x){
+			var type = Number(x.getAttribute("data-ooof"));
+			sum = sum + type;
+			document.getElementById("Total Bells").innerHTML = sum;
+		}
+		var isNativeState = true;
+		function change(){
+			let fruits = Array.from(document.getElementsByClassName("fruit"));
+			if (isNativeState) {
+				isNativeState = false;
+				fruits.forEach(fruit => {
+					fruit.setAttribute("data-ooof", "500");
+				});
+			}
+			else {
+				isNativeState = true;
+				fruits.forEach(fruit => {
+					fruit.setAttribute("data-ooof", "100");
+				});
+			}
+		}
+		function reset() {
+			sum = 0;
+			document.getElementById("Total Bells").innerHTML = 0;
+		}
+		function changeText() {
+            var btn = document.getElementById("flipper");
+            if (btn.value == "Native") {
+                btn.value = "Foreign";
+                btn.innerHTML = "Foreign";
+            }
+            else {
+                btn.value = "Native";
+                btn.innerHTML = "Native";
+            }
+        }
+	</script>
+	<div class="fish-constraints">
+		<img src="assets/fish/Anchovy.png" onclick="totalbellvalue
+		(this)"id="Anchovy" data-ooof="200" class="fish" title="Anchovy" hspace="10">
+		
+	<img src="assets/fish/Angelfish.png" onclick="totalbellvalue
+		(this)"id="Angelfish" data-ooof="3000" class="fish" title="Angelfish">
+
+	<img src="assets/fish/Arapaima.png" onclick="totalbellvalue
+	(this)"id="Arapaima" data-ooof="10000" class="fish" title="Arapaima" hspace="10">
+
+	<img src="assets/fish/Arowana.png" onclick="totalbellvalue
+	(this)"id="Arowana" data-ooof="10000" class="fish" title="Arowana">
+
+	<img src="assets/fish/Barred_Knifejaw.png" onclick="totalbellvalue
+	(this)"id="Barred_Knifejaw" data-ooof="5000" class="fish" title="Barred_Knifejaw" hspace="10">
+
+	<img src="assets/fish/Barreleye.png" onclick="totalbellvalue
+	(this)"id="Barreleye" data-ooof="15000" class="fish" title="Barreleye">
+
+	<img src="assets/fish/Betta.png" onclick="totalbellvalue
+	(this)"id="Betta" data-ooof="2500" class="fish" title="Betta" hspace="10">
+
+	<img src="assets/fish/Bitterling.png" onclick="totalbellvalue
+	(this)"id="Bitterling" data-ooof="900" class="fish" title="Bitterling">
+
+	<img src="assets/fish/Black_Bass.png" onclick="totalbellvalue
+	(this)"id="Black_Bass" data-ooof="400" class="fish" title="Black_Bass" hspace="10">
+
+	<img src="assets/fish/Blowfish.png" onclick="totalbellvalue
+	(this)"id="Blowfish" data-ooof="5000" class="fish" title="Blowfish">
+
+	<img src="assets/fish/Blue_Marlin.png" onclick="totalbellvalue
+	(this)"id="Blue_Marlin" data-ooof="10000" class="fish" title="Blue_Marlin" hspace="10">
+
+	<img src="assets/fish/Bluegil.png" onclick="totalbellvalue
+	(this)"id="Bluegil" data-ooof="180" class="fish" title="Bluegil">
+
+	<img src="assets/fish/Butterfly_Fish.png" onclick="totalbellvalue
+	(this)"id="Butterfly_Fish" data-ooof="1000" class="fish" title="Butterfly_Fish" hspace="10">
+
+	<img src="assets/fish/Carp.png" onclick="totalbellvalue
+	(this)"id="Carp" data-ooof="300" class="fish" title="Carp">
+
+	<img src="assets/fish/Catfish.png" onclick="totalbellvalue
+	(this)"id="Catfish" data-ooof="800" class="fish" title="Catfish" hspace="10">
+
+	<img src="assets/fish/Char.png" onclick="totalbellvalue
+	(this)"id="Char" data-ooof="3800" class="fish" title="Char">
+
+	<img src="assets/fish/Cherry_Salmon.png" onclick="totalbellvalue
+	(this)"id="Cherry_Salmon" data-ooof="1000" class="fish" title="Cherry_Salmon" hspace="10">
+
+	<img src="assets/fish/Clownfish.png" onclick="totalbellvalue
+	(this)"id="Clownfish" data-ooof="650" class="fish" title="Clownfish">
+
+	<img src="assets/fish/Coelacanth.png" onclick="totalbellvalue
+	(this)"id="Coelacanth" data-ooof="15000" class="fish" title="Coelacanth" hspace="10">
+
+	<img src="assets/fish/Crawfish.png" onclick="totalbellvalue
+	(this)"id="Crawfish" data-ooof="200" class="fish" title="Crawfish">
+
+	<img src="assets/fish/Crucian_Carp.png" onclick="totalbellvalue
+	(this)"id="Crucian_Carp" data-ooof="160" class="fish" title="Crucian_Carp" hspace="10">
+
+	<img src="assets/fish/Dab.png" onclick="totalbellvalue
+	(this)"id="Dab" data-ooof="300" class="fish" title="Dab">
+
+	<img src="assets/fish/Dace.png" onclick="totalbellvalue
+	(this)"id="Dace" data-ooof="240" class="fish" title="Dace" hspace="10">
+
+	<img src="assets/fish/Dorado.png" onclick="totalbellvalue
+	(this)"id="Dorado" data-ooof="15000" class="fish" title="Dorado">
+
+	<img src="assets/fish/Football_Fish.png" onclick="totalbellvalue
+	(this)"id="Football_Fish" data-ooof="2500" class="fish" title="Football_Fish" hspace="10">
+
+	<img src="assets/fish/Freshwater_Goby.png" onclick="totalbellvalue
+	(this)"id="Freshwater_Goby" data-ooof="400" class="fish" title="Freshwater_Goby">
+
+	<img src="assets/fish/Frog.png" onclick="totalbellvalue
+	(this)"id="Frog" data-ooof="120" class="fish" title="Frog" hspace="10">
+
+	<img src="assets/fish/Gar.png" onclick="totalbellvalue
+	(this)"id="Gar" data-ooof="6000" class="fish" title="Gar">
+
+	<img src="assets/fish/Giant_Snakehead.png" onclick="totalbellvalue
+	(this)"id="Giant_Snakehead" data-ooof="5500" class="fish" title="Giant_Snakehead" hspace="10">
+
+	<img src="assets/fish/Giant_Trevally.png" onclick="totalbellvalue
+	(this)"id="Giant_Trevally" data-ooof="4500" class="fish" title="Giant_Trevally">
+
+	<img src="assets/fish/Golden_Trout.png" onclick="totalbellvalue
+	(this)"id="Golden_Trout" data-ooof="15000" class="fish" title="Golden_Trout" hspace="10">
+	
+	<img src="assets/fish/Goldfish.png" onclick="totalbellvalue
+	(this)"id="Goldfish" data-ooof="1300" class="fish" title="Goldfish">
+
+	<img src="assets/fish/Great_White_Shark.png" onclick="totalbellvalue
+	(this)"id="Great_White_Shark" data-ooof="15000" class="fish" title="Great_White_Shark" hspace="10">
+
+	<img src="assets/fish/Guppy.png" onclick="totalbellvalue
+	(this)"id="Guppy" data-ooof="1300" class="fish" title="Guppy">
+
+	<img src="assets/fish/Hammerhead_Shark.png" onclick="totalbellvalue
+	(this)"id="Hammerhead_Shark" data-ooof="8000" class="fish" title="Hammerhead_Shark" hspace="10">
+
+	<img src="assets/fish/Horse_Mackerel.png" onclick="totalbellvalue
+	(this)"id="Horse_Mackerel" data-ooof="150" class="fish" title="Horse_Mackerel">
+
+	<img src="assets/fish/Killifish.png" onclick="totalbellvalue
+	(this)"id="Killifish" data-ooof="300" class="fish" title="Killifish" hspace="10">
+
+	<img src="assets/fish/King_Salmon.png" onclick="totalbellvalue
+	(this)"id="King_Salmon" data-ooof="1800" class="fish" title="King_Salmon">
+
+	<img src="assets/fish/Koi.png" onclick="totalbellvalue
+	(this)"id="Koi" data-ooof="4000" class="fish" title="Koi" hspace="10">
+
+	<img src="assets/fish/Loach.png" onclick="totalbellvalue
+	(this)"id="Loach" data-ooof="400" class="fish" title="Loach">
+
+	<img src="assets/fish/Mahi-Mahi.png" onclick="totalbellvalue
+	(this)"id="Mahi-Mahi" data-ooof="6000" class="fish" title="Mahi-Mahi" hspace="10">
+
+	<img src="assets/fish/Mitten_Crab.png" onclick="totalbellvalue
+	(this)"id="Mitten_Crab" data-ooof="2000" class="fish" title="Mitten_Crab">
+
+	<img src="assets/fish/Moray_Eel.png" onclick="totalbellvalue
+	(this)"id="Moray_Eel" data-ooof="2000" class="fish" title="Moray_Eel" hspace="10">
+
+	<img src="assets/fish/Napoleonfish_.png" onclick="totalbellvalue
+	(this)"id="Napoleonfish" data-ooof="10000" class="fish" title="Napoleonfish">
+
+	<img src="assets/fish/Neon_Tetra.png" onclick="totalbellvalue
+	(this)"id="Neon_Tetra" data-ooof="500" class="fish" title="Neon_Tetra" hspace="10">
+
+	<img src="assets/fish/Nibble_Fish.png" onclick="totalbellvalue
+	(this)"id="Nibble_Fish" data-ooof="1500" class="fish" title="Nibble_Fish">
+
+	<img src="assets/fish/Oarfish.png" onclick="totalbellvalue
+	(this)"id="Oarfish" data-ooof="9000" class="fish" title="Oarfish" hspace="10">
+
+	<img src="assets/fish/Ocean_Sunfish.png" onclick="totalbellvalue
+	(this)"id="Ocean_Sunfish" data-ooof="4000" class="fish" title="Ocean_Sunfish">
+
+	<img src="assets/fish/Olive_Flounder.png" onclick="totalbellvalue
+	(this)"id="Olive_Flounder" data-ooof="800" class="fish" title="Olive_Flounder" hspace="10">
+
+	<img src="assets/fish/Pale_Chub.png" onclick="totalbellvalue
+	(this)"id="Pale_Chub" data-ooof="200" class="fish" title="Pale_Chub">
+
+	<img src="assets/fish/Pike.png" onclick="totalbellvalue
+	(this)"id="Pike" data-ooof="1800" class="fish" title="Pike" hspace="10">
+
+	<img src="assets/fish/Piranha.png" onclick="totalbellvalue
+	(this)"id="Piranha" data-ooof="2500" class="fish" title="Piranha">
+
+	<img src="assets/fish/Pond_Smelt.png" onclick="totalbellvalue
+	(this)"id="Pond_Smelt" data-ooof="500" class="fish" title="Pond_Smelt" hspace="10">
+
+	<img src="assets/fish/Popeyed_Goldfish.png" onclick="totalbellvalue
+	(this)"id="Popeyed_Goldfish" data-ooof="1300" class="fish" title="Popeyed_Goldfish">
+
+	<img src="assets/fish/Puffer_Fish.png" onclick="totalbellvalue
+	(this)"id="Puffer_Fish" data-ooof="250" class="fish" title="Puffer_Fish" hspace="10">
+
+	<img src="assets/fish/Rainbowfish.png" onclick="totalbellvalue
+	(this)"id="Rainbowfish" data-ooof="800" class="fish" title="Rainbowfish">
+
+	<img src="assets/fish/Ranchu_Goldfish.png" onclick="totalbellvalue
+	(this)"id="Ranchu_Goldfish" data-ooof="4500" class="fish" title="Ranchu_Goldfish" hspace="10">
+
+	<img src="assets/fish/Ray.png" onclick="totalbellvalue
+	(this)"id="Ray" data-ooof="3000" class="fish" title="Ray">
+
+	<img src="assets/fish/Red_Snapper.png" onclick="totalbellvalue
+	(this)"id="Red_Snapper" data-ooof="3000" class="fish" title="Red_Snapper" hspace="10">
+
+	<img src="assets/fish/Ribbon_Eel.png" onclick="totalbellvalue
+	(this)"id="Ribbon_Eel" data-ooof="600" class="fish" title="Ribbon_Eel">
+
+	<img src="assets/fish/Saddled_Bichir.png" onclick="totalbellvalue
+	(this)"id="Saddled_Bichir" data-ooof="4000" class="fish" title="Saddled_Bichir" hspace="10">
+
+	<img src="assets/fish/Salmon.png" onclick="totalbellvalue
+	(this)"id="Salmon" data-ooof="700" class="fish" title="Salmon">
+
+	<img src="assets/fish/Saw_Shark.png" onclick="totalbellvalue
+	(this)"id="Saw_Shark" data-ooof="12000" class="fish" title="Saw_Shark" hspace="10">
+
+	<img src="assets/fish/Sea_Bass.png" onclick="totalbellvalue
+	(this)"id="Sea_Bass" data-ooof="400" class="fish" title="Sea_Bass">
+
+	<img src="assets/fish/Sea_Butterfly.png" onclick="totalbellvalue
+	(this)"id="Sea_Butterfly" data-ooof="1000" class="fish" title="Sea_Butterfly" hspace="10">
+
+	<img src="assets/fish/Seahorse.png" onclick="totalbellvalue
+	(this)"id="Seahorse" data-ooof="1100" class="fish" title="Seahorse">
+
+	<img src="assets/fish/Snapping.png" onclick="totalbellvalue
+	(this)"id="Snapping_Turtle" data-ooof="5000" class="fish" title="Snapping_Turtle" hspace="10">
+
+	<img src="assets/fish/Soft-Shelled_Turtle.png" onclick="totalbellvalue
+	(this)"id="Soft-Shelled_Turtle" data-ooof="3750" class="fish" title="Soft-Shelled_Turtle">
+
+	<img src="assets/fish/Squid.png" onclick="totalbellvalue
+	(this)"id="Squid" data-ooof="500" class="fish" title="Squid" hspace="10">
+
+	<img src="assets/fish/Stringfish.png" onclick="totalbellvalue
+	(this)"id="Stringfish" data-ooof="15000" class="fish" title="Stringfish">
+
+	<img src="assets/fish/Sturgeon.png" onclick="totalbellvalue
+	(this)"id="Sturgeon" data-ooof="10000" class="fish" title="Sturgeon" hspace="10">
+
+	<img src="assets/fish/Suckerfish.png" onclick="totalbellvalue
+	(this)"id="Suckerfish" data-ooof="1500" class="fish" title="Suckerfish">
+
+	<img src="assets/fish/Surgeonfish.png" onclick="totalbellvalue
+	(this)"id="Surgeonfish" data-ooof="1000" class="fish" title="Surgeonfish" hspace="10">
+
+	<img src="assets/fish/Sweetfish.png" onclick="totalbellvalue
+	(this)"id="Sweetfish" data-ooof="900" class="fish" title="Sweetfish">
+
+	<img src="assets/fish/Tadpole.png" onclick="totalbellvalue
+	(this)"id="Tadpole" data-ooof="100" class="fish" title="Tadpole" hspace="10">
+
+	<img src="assets/fish/Tilapia.png" onclick="totalbellvalue
+	(this)"id="Tilapia" data-ooof="800" class="fish" title="Tilapia">
+
+	<img src="assets/fish/Tuna.png" onclick="totalbellvalue
+	(this)"id="Tuna" data-ooof="7000" class="fish" title="Tuna" hspace="10">
+
+	<img src="assets/fish/Whale_Shark.png" onclick="totalbellvalue
+	(this)"id="Whale_Shark" data-ooof="13000" class="fish" title="Whale_Shark">
+
+	<img src="assets/fish/Yellow_Perch.png" onclick="totalbellvalue
+	(this)"id="Yellow_Perch" data-ooof="300" class="fish" title="Yellow_Perch" hspace="10">
+
+	<img src="assets/fish/Zebra_Turkeyfish.png" onclick="totalbellvalue
+	(this)"id="Zebra_Turkeyfish" data-ooof="500" class="fish" title="Zebra_Turkeyfish">
+
+
+	</div>
+
+	<br><br><br>
+
+	<div class="bug-constraints">
+		<img src="assets/bugs/Agrias_Butterfly.png" onclick="totalbellvalue
+		(this)"id="Agrias_Butterfly" data-ooof ="3000" title="Agrias_Butterfly" hspace="10">
+
+		<img src="assets/bugs/Ant.png" onclick="totalbellvalue
+		(this)"id="Ant" data-ooof ="0" title="Ant">
+
+		<img src="assets/bugs/Atlas_Moth.png" onclick="totalbellvalue
+		(this)"id="Atlas_Moth" data-ooof ="3000" title="Atlas_Moth" hspace="10">
+
+		<img src="assets/bugs/Bagworm.png" onclick="totalbellvalue
+		(this)"id="Bagworm" data-ooof ="600" title="Bagworm">
+
+		<img src="assets/bugs/Banded_Dragonfly.png" onclick="totalbellvalue
+		(this)"id="Banded_Dragonfly" data-ooof ="4500" title="Banded_Dragonfly" hspace="10">
+
+		<img src="assets/bugs/Bee.png" onclick="totalbellvalue
+		(this)"id="Bee" data-ooof ="2500" title="Wasp">
+
+		<img src="assets/bugs/Bell_Cricket.png" onclick="totalbellvalue
+		(this)"id="Bell_Cricket" data-ooof ="2500" title="Bell_Cricket" hspace="10">
+
+		<img src="assets/bugs/Blue_Weevil_Beetle.png" onclick="totalbellvalue
+		(this)"id="Blue_Weevil_Beetle" data-ooof ="0" title="Blue_Weevil_Beetle">
+
+		<img src="assets/bugs/Brown_Cicada.png" onclick="totalbellvalue
+		(this)"id="Brown_Cicada" data-ooof ="250" title="Brown_Cicada" hspace="10">
+
+		<img src="assets/bugs/Centipede.png" onclick="totalbellvalue
+		(this)"id="Centipede" data-ooof ="300" title="Centipede">
+
+		<img src="assets/bugs/Cicada_Shell.png" onclick="totalbellvalue
+		(this)"id="Cicada_Shell" data-ooof ="10" title="Cicada_Shell" hspace="10">
+
+		<img src="assets/bugs/Citrus_Long-horned_Beetle.png" onclick="totalbellvalue
+		(this)"id="Citrus_Long-horned_Beetle" data-ooof ="350" title="Citrus_Long-horned_Beetle">
+
+		<img src="assets/bugs/Common_Bluebottle.png" onclick="totalbellvalue
+		(this)"id="Common_Bluebottle" data-ooof ="300" title="Common_Bluebottle" hspace="10">
+
+		<img src="assets/bugs/Common_Butterfly.png" onclick="totalbellvalue
+		(this)"id="Common_Butterfly" data-ooof ="160" title="Common_Butterfly">
+
+		<img src="assets/bugs/Cricket.png" onclick="totalbellvalue
+		(this)"id="Cricket" data-ooof ="130" title="Cricket" hspace="10">
+
+		<img src="assets/bugs/Damselfly.png" onclick="totalbellvalue
+		(this)"id="Damselfly" data-ooof ="0" title="Damselfly">
+
+		<img src="assets/bugs/Darner_Dragonfly.png" onclick="totalbellvalue
+		(this)"id="Darner_Dragonfly" data-ooof ="230" title="Darner_Dragonfly" hspace="10">
+
+		<img src="assets/bugs/Diving_Beetle.png" onclick="totalbellvalue
+		(this)"id="Diving_Beetle" data-ooof ="800" title="Diving_Beetle">
+
+		<img src="assets/bugs/Drone_Beetle.png" onclick="totalbellvalue
+		(this)"id="Drone_Beetle" data-ooof="200" title="Drone_Beetle" hspace="10">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Dung Beetle" data-ooof ="0" title="Dung Beetle" width="64" height="64">
+
+		<img src="assets/bugs/Earth-Boring_Dung_Beetle.png" onclick="totalbellvalue
+		(this)"id="Earth-Boring_Dung_Beetle" data-ooof ="300" title="Earth-Boring_Dung_Beetle">
+
+		<img src="assets/bugs/Emperor_Butterfly.png" onclick="totalbellvalue
+		(this)"id="Emperor_Butterfly" data-ooof="4000" title="Emperor_Butterfly" hspace="10">
+
+		<img src="assets/bugs/Evening_Cicada.png" onclick="totalbellvalue
+		(this)"id="Evening_Cicada" data-ooof ="550" title="Evening_Cicada">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Firefly" data-ooof ="0" title="Firefly" hspace="10" width="64" height="64">
+
+		<img src="assets/bugs/Flea.png" onclick="totalbellvalue
+		(this)"id="Flea" data-ooof ="0" title="Flea">
+
+		<img src="assets/bugs/Giant_Cicada.png" onclick="totalbellvalue
+		(this)"id="Giant_Cicada" data-ooof ="500" title="Giant_Cicada" hspace="10">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Giant Stag" data-ooof ="10000" title="Giant Stag" width="64" height="64">
+
+		<img src="assets/bugs/Giant_Water_Bug.png" onclick="totalbellvalue
+		(this)"id="Giant_Water_Bug" data-ooof ="2000" title="Giant_Water_Bug" hspace="10">
+
+		<img src="assets/bugs/Giraffe_Stag.png" onclick="totalbellvalue
+		(this)"id="Giraffe_Stag" data-ooof ="0" title="Giraffe_Stag">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Golden Stag" data-ooof ="0" title="Golden Stag" width="64" height="64" hspace="10">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Goliath Beetle" data-ooof ="8000" title="Goliath Beetle" width="64" height="64">
+
+		<img src="assets/bugs/Grasshopper.png" onclick="totalbellvalue
+		(this)"id="Grasshopper" data-ooof ="160" title="Grasshopper" hspace="10">
+
+		<img src="assets/bugs/Great_Purple_Emperor.png" onclick="totalbellvalue
+		(this)"id="Great_Purple_Emperor" data-ooof ="3000" title="Great_Purple_Emperor">
+
+		<img src="assets/bugs/Hermit_Crab.png" onclick="totalbellvalue
+		(this)"id="Hermit_Crab" data-ooof ="1000" title="Hermit_Crab" hspace="10">
+
+		<img src="assets/bugs/Honeybee.png" onclick="totalbellvalue
+		(this)"id="Honeybee" data-ooof ="200" title="Honeybee">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Horned Atlas" data-ooof ="8000" title="Horned Atlas" width="64" height="64" hspace="10">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Horned Dynastid" data-ooof ="1350" title="Horned Dynastid" width="64" height="64">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Horned Elephant" data-ooof ="8000" title="Horned Elephant" width="64" height="64" hspace="10">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Horned Hercules" data-ooof ="0" title="Horned Hercules" width="64" height="64">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Jewel Beetle" data-ooof ="2400" title="Jewel Beetle" width="64" height="64" hspace="10">
+
+		<img src="assets/bugs/Ladybug.png" onclick="totalbellvalue
+		(this)"id="Ladybug" data-ooof ="200" title="Ladybug">
+
+		<img src="assets/bugs/Long_Locust.png" onclick="totalbellvalue
+		(this)"id="Long_Locust" data-ooof ="200" title="Long_Locust" hspace="10">
+
+		<img src="assets/bugs/Madagascan_Sunset_Moth.png" onclick="totalbellvalue
+		(this)"id="Madagascan_Sunset_Moth" data-ooof ="2500" title="Madagascan_Sunset_Moth">
+
+		<img src="assets/bugs/Man-faced_Stink_Bug.png" onclick="totalbellvalue
+		(this)"id="Man-faced_Stink_Bug" data-ooof ="1000" title="Man-faced_Stink_Bug" hspace="10">
+
+		<img src="assets/bugs/Mantis.png" onclick="totalbellvalue
+		(this)"id="Mantis" data-ooof ="430" title="Mantis">
+
+		<img src="assets/bugs/Migratory_Locust.png" onclick="totalbellvalue
+		(this)"id="Migratory_Locust" data-ooof="600" title="Migratory_Locust" hspace="10">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Miyama Stag" data-ooof ="1000" title="Miyama Stag" width="64" height="64" hspace="10">
+
+		<img src="assets/bugs/Mole_Cricket.png" onclick="totalbellvalue
+		(this)"id="Mole_Cricket" data-ooof ="500" title="Mole_Cricket">
+
+		<img src="assets/bugs/Monarch_Butterfly.png" onclick="totalbellvalue
+		(this)"id="Monarch_Butterfly" data-ooof ="140" title="Monarch_Butterfly" hspace="10">
+
+		<img src="assets/bugs/Mosquito.png" onclick="totalbellvalue
+		(this)"id="Mosquito" data-ooof ="130" title="Mosquito">
+
+		<img src="assets/bugs/Moth.png" onclick="totalbellvalue
+		(this)"id="Moth" data-ooof ="130" title="Moth" hspace="10">
+
+		<img src="assets/bugs/Orchid_Mantis.png" onclick="totalbellvalue
+		(this)"id="Orchid_Mantis" data-ooof ="2400" title="Orchid_Mantis">
+
+		<img src="assets/bugs/Paper_Kite_Butterfly.png" onclick="totalbellvalue
+		(this)"id="Moth" data-ooof="130" title="Molth" hspace="10">
+
+		<img src="assets/bugs/Peacock_Butterfly.png" onclick="totalbellvalue
+		(this)"id="Peacock_Butterfly" data-ooof ="2500" title="Peacock_Butterfly">
+
+		<img src="assets/bugs/Pill-Bug.png" onclick="totalbellvalue
+		(this)"id="Pill-Bug" data-ooof ="250" title="Pill-Bug" hspace="10">
+
+		<img src="assets/bugs/Pondskater.png" onclick="totalbellvalue
+		(this)"id="Pondskater" data-ooof ="130" title="Pondskater">
+
+		<img src="assets/bugs/Queenalex.png" onclick="totalbellvalue
+		(this)"id="Queenalex" data-ooof =4000 title="Queenalex" hspace="10">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Rainbow stag" data-ooof="6000" title="Rainbow Stag" width="64" height="64">
+
+		<img src="assets/bugs/Queenalex.png" onclick="totalbellvalue
+		(this)"id="Queenalex" data-ooof =4000 title="Queenalex" hspace="10">
+
+		<img src="assets/bugs/Rajahbrookes.png" onclick="totalbellvalue
+		(this)"id="Rajahbrookes" data-ooof =2500 title="Rajahbrookes">
+
+		<img src="assets/bugs/Red_Dragonfly.png" onclick="totalbellvalue
+		(this)"id="Red_Dragonfly" data-ooof =180 title="Red_Dragonfly" hspace="10">
+
+		<img src="assets/bugs/Rice_Grasshopper.png" onclick="totalbellvalue
+		(this)"id="Rice_Grasshopper" data-ooof =160 title="Rice_Grasshopper">
+
+		<img src="assets/bugs/Robust_Cicada.png" onclick="totalbellvalue
+		(this)"id="Robust_Cicada" data-ooof =300 title="Robust_Cicada" hspace="10">
+
+		<img src="assets/bugs/Rosalia_Batesi_Beetle.png" onclick="totalbellvalue
+		(this)"id="Rosalia_Batesi_Beetle" data-ooof =3000 title="Rosalia_Batesi_Beetle">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Saw stag" data-ooof="0" title="Saw Stag" width="64" height="64" hspace="10">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Scarab Beetle" data-ooof="0" title="Scarab Beetle" width="64" height="64">
+
+		<img src="assets/bugs/Scorpion.png" onclick="totalbellvalue
+		(this)"id="Scorpion" data-ooof =8000 title="Scorpion" hspace="10">
+
+		<img src="assets/bugs/Snail.png" onclick="totalbellvalue
+		(this)"id="Snail" data-ooof =250 title="Snail">
+
+		<img src="assets/bugs/Spider.png" onclick="totalbellvalue
+		(this)"id="Spider" data-ooof =460 title="Spider" hspace="10">
+
+		<img src="assets/bugs/Stinkbug.png" onclick="totalbellvalue
+		(this)"id="Stinkbug" data-ooof =120 title="Stinkbug">
+
+		<img src="assets/bugs/Tarantula.png" onclick="totalbellvalue
+		(this)"id="Tarantula" data-ooof =8000 title="Tarantula" hspace="10">
+
+		<img src="assets/bugs/Tiger_Beetle.png" onclick="totalbellvalue
+		(this)"id="Tiger_Beetle" data-ooof =1500 title="Tiger_Beetle">
+
+		<img src="assets/bugs/Tiger_Butterfly.png" onclick="totalbellvalue
+		(this)"id="Tiger_Butterfly" data-ooof =240 title="Tiger_Butterfly" hspace="10">
+
+		<img src="assets/bugs/Violinbeetle.png" onclick="totalbellvalue
+		(this)"id="Violinbeetle" data-ooof =450 title="Violinbeetle">
+
+		<img src="assets/bugs/Walker_Cicada.png" onclick="totalbellvalue
+		(this)"id="Walker_Cicada" data-ooof =400 title="Walker_Cicada" hspace="10">
+
+		<img src="assets/bugs/Walking_Leaf.png" onclick="totalbellvalue
+		(this)"id="Walking_Leaf" data-ooof =600 title="Walking_Leaf">
+
+		<img src="assets/bugs/q.jpg" onclick="totalbellvalue
+		(this)"id="Walking Stick" data-ooof =0 title="Walking Stick" hspace="10"  width="64" height="64">
+
+		<img src="assets/bugs/Wharf_Roach.png" onclick="totalbellvalue
+		(this)"id="Wharf_Roach" data-ooof =200 title="Wharf_Roach">
+
+		<img src="assets/bugs/Yellow_Butterfly.png" onclick="totalbellvalue
+		(this)"id="Yellow_Butterfly" data-ooof =160 title="Yellow_Butterfly">
+
+
+
+
+	</div>
+
+	<br><br><br>
+t>
+	<div style="font-family:calibri,calibri,serif;">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1200"value="Amber"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1100"value="Ammonite"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3500"value="anykylosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="anykylosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2500"value="anykylosaurus tail"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5000"value="apatosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="apatosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="apatosaurus tail"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1300"value="archaeopteryx"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="archelon skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3500"value="archelon torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1100"value="coprolite"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5500"value="dimetrodon skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5000"value="dimetrodon torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="dimetrodon tail"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1400"value="dinosaur egg"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1000"value="dinosaur track"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5000"value="diplodocus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5000"value="diplodocus neck"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="diplodocus chest"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="diplodocus hip"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="diplodocus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1000"value="fern fossil"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2500"value="chthyosaur skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2000"value="chthyosaur torso"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="iquanodon skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3500"value="iquanodon torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="iquanodon tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="mammoth skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2500"value="mammoth torso"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="megaceros skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3500"value="megaceros torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="megaceros tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="pachysaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3500"value="pachysaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="pachysaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3500"value="parasaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="parasaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2500"value="parasaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1100"value="pecking man"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="plesiosaur skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="plesiosaur torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="plesiosaur tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="pteranodon right wing"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="pteranodon skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="pteranodon left wing"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="velociraptor(aka raptor) skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2500"value="velociraptor(aka raptor) torso"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2500"value="sabretooth tiger skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2000"value="sabretooth tiger torso"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1000"value="shark tooth"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="spinosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="spinosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2000"value="spinosaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5000"value="stegosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="stegosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4000"value="stegosaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3500"value="styracosaurus skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="3000"value="styracosaurus torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="2500"value="styracosaurus tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="6000"value="triceratops skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5500"value="triceratops torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="4500"value="triceratops tail"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="1300"value="trilobite"class="button">
+
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="6000"value="tyrannosaurus rex skull"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5500"value="tyrannosaurus rex torso"class="button">
+		<input type="button" onclick="totalbellvalue(this)"data-ooof="5000"value="tyrannosaurus rex tail"class="button">
+
+	</div>
+
+	
+	<div class="pos-fruit">
+		<img src="assets/fruit/apple.png" height="250" width="250" onclick="totalbellvalue(this)" id="apple" data-ooof="100" class="fruit">
+		<img src="assets/fruit/cherry.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="cherry" data-ooof="100" class="fruit">
+		<img src="assets/fruit/coconut.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="coconut" data-ooof="250">
+		<img src="assets/fruit/orange.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="orange" data-ooof="100" class="fruit">
+		<img src="assets/fruit/peach.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="peach" data-ooof="100" class="fruit">
+		<img src="assets/fruit/pear.png" height="250" width="250" onclick="totalbellvalue
+		(this)"id="pear" data-ooof="100" class="fruit">
+	</div>
+	<br>
+
+	<div style="font-family:calibri,calibri,serif;" onclick="changeText()">
+		<input type="button" value="Native" id="flipper" onclick="change()"name="Native" class="button">
+	</div>
+
+	<h1>Total Bells: <span id="Total Bells"></span></h1>
+	<input type="button" onclick="reset()" name="Reset" class="button" value="Reset">
+
+</body>
+
+
