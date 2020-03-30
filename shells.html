@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animal Crossing New Horizons Shell Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="construct.css">
+	<link rel="stylesheet" type="text/html" href="index.html">
+</head>
+<body background="background.png">
+	<div class="leaf">
+		<img src="Animal_Crossing_Leaf.png" height="180px" width="180px">
+	</div>
+	<div class="bell">
+		<img src="bell.png" height="180px" width="180px">
+	</div>
+	<div class="container">
+		<div style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+			<div class="vertical-center">
+				<span style="font-size: 6vw; color: black;">
+					<B>Animal Crossing New Horizons</B>
+				</span>
+				<span style="font-size: 7vw; color: #EFB715;">
+					<B>Bell Calculator</B>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="back-button" style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+		<span style="font-size: 3vw; color: #5D90EB;">
+			<B><a href="index.html" style="text-decoration: none;" >Home</a></B>
+		</span>
+	</div>
+
+	<script>
+		var sum = 0;
+		function totalbellvalue(shell){
+			var shelltype = Number(shell.getAttribute("data-shell"));
+			sum = sum + shelltype;
+			document.getElementById("Total Bells").innerHTML = sum;
+		}
+		function reset() {
+			sum = 0;
+			document.getElementById("Total Bells").innerHTML = 0;
+		}
+	</script>
+	<br>
+
+	<div style="font-family:calibri,calibri,serif;">
+
+		<input type="button" onclick="totalbellvalue(this)"data-shell="1200"value="Conch"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="250"value="Coral"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="60"value="Cowries"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="450"value="Giant Clam"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="100"value="Manila Clam"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="450"value="Oyster Shell"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="1200"value="Pearl Oyster"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="30"value="Porceletta"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="120"value="Sand Dollar"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="180"value="Sea Snail"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="600"value="Scallop Shell"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="150"value="Venus Comb"class="shellButton">
+		<input type="button" onclick="totalbellvalue(this)"data-shell="450"value="White Scallop"class="shellButton">
+
+	</div>
+
+	<h1>Total Bells: <span id="Total Bells"></span></h1>
+	<input type="button" onclick="reset()" name="Reset" class="button" value="Reset">
+
+	<h2>Shells are in alphabetical order</h2>
+	<h2>Click on each shell to add up its value.</h2>
+
+</body>

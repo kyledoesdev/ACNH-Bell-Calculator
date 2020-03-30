@@ -35,9 +35,10 @@ left: 16px;
 padding-left: 150px;
 }
 .button{
-  background-color: #4CAF50;
+  font-family: 'Baloo 2', cursive;
+  background-color: #93BBBC;
   border: none;
-  color: white;
+  color: black;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -46,21 +47,22 @@ padding-left: 150px;
   margin: 4px 2px;
   cursor: pointer;
 }
-.fish{
-padding-top: 40px
+.shellButton{
+  font-family: 'Baloo 2', cursive;
+  background-color: #E3E49A;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 .fish-constraints{
 	left: 40px;
 }
 .bug-constraints{
 	left: 40px;
-}
-.bugs{
-
-}
-.fossils{
-
-}
-.fruit{
-
 }
