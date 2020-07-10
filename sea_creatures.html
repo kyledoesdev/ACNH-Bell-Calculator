@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sea Creatures</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="construct.css">
+	<link rel="stylesheet" type="text/html" href="index.html">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162879132-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-162879132-1');
+	</script>
+</head>
+<body background="background.png">
+
+	<div class="leaf">
+		<img src="Animal_Crossing_Leaf.png" height="180px" width="180px">
+	</div>
+	<div class="bell">
+		<img src="bell.png" height="180px" width="180px">
+	</div>
+	<div class="container">
+		<div style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+			<div class="vertical-center">
+				<span style="font-size: 6vw; color: black;">
+					<B>Animal Crossing New Horizons</B>
+				</span>
+				<span style="font-size: 7vw; color: #EFB715;">
+					<B>Bell Calculator</B>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="back-button" style="font-family:calibri,calibri,serif; font-style: italic;" id="title">
+		<span style="font-size: 3vw; color: #5D90EB;">
+			<B><a href="index.html" style="text-decoration: none;" >Home</a></B>
+		</span>
+	</div>
+
+	<script>
+		var sum = 0;
+		function totalbellvalue(sea){
+			var seatype = Number(sea.getAttribute("data-ooof"));
+			sum = sum + seatype;
+			document.getElementById("Total Bells").innerHTML = sum;
+		}
+		function reset() {
+			sum = 0;
+			document.getElementById("Total Bells").innerHTML = 0;
+		}
+	</script>
+
+	<img src="assets/sea/abalone.png" onclick="totalbellvalue(this)" id="abalone" data-ooof="2000" class="sea" title="abalone">
+
+	<img src="assets/sea/acornbarnacle.png" onclick="totalbellvalue(this)" id="acornbarnacle" data-ooof="600" class="sea" title="acornbarnacle">
+
+	<img src="assets/sea/chamberednautilus.png" onclick="totalbellvalue(this)" id="chamberednautilus" data-ooof="1800" class="sea" title="chamberednautilus\">
+
+	<img src="assets/sea/dungenesscrab.png" onclick="totalbellvalue(this)" id="dungenesscrab" data-ooof="1900" class="sea" title="dungenesscrab">
+
+	<img src="assets/sea/fireflysquid.png" onclick="totalbellvalue(this)" id="fireflysquid" data-ooof="1400" class="sea" title="fireflysquid">
+
+	<img src="assets/sea/flatworm.png" onclick="totalbellvalue(this)" id="flatworm" data-ooof="700" class="sea" title="flatworm">
+
+	<img src="assets/sea/gazamicrab.png" onclick="totalbellvalue(this)" id="gazamicrab" data-ooof="2200" class="sea" title="gazamicrab">
+
+	<img src="assets/sea/giantisopod.png" onclick="totalbellvalue(this)" id="giantisopod" data-ooof="12000" class="sea" title="giantisopod">
+
+	<img src="assets/sea/gigasgiantclam.png" onclick="totalbellvalue(this)" id="gigasgiantclam" data-ooof="15000" class="sea" title="gigasgiantclam">
+
+	<img src="assets/sea/horseshoecrab.png" onclick="totalbellvalue(this)" id="horseshoecrab" data-ooof="2500" class="sea" title="horseshoecrab">
+
+	<img src="assets/sea/lobster.png" onclick="totalbellvalue(this)" id="lobster" data-ooof="4500" class="sea" title="lobster">
+
+	<img src="assets/sea/mantisshrimp.png" onclick="totalbellvalue(this)" id="mantisshrimp" data-ooof="2500" class="sea" title="mantisshrimp">
+
+	<img src="assets/sea/moonjellyfish.png" onclick="totalbellvalue(this)" id="moonjellyfish" data-ooof="600" class="sea" title="moonjellyfish">
+
+	<img src="assets/sea/mussel.png" onclick="totalbellvalue(this)" id="mussel" data-ooof="1500" class="sea" title="mussel">
+
+	<img src="assets/sea/octopus.png" onclick="totalbellvalue(this)" id="octopus" data-ooof="1200" class="sea" title="octopus">
+
+	<img src="assets/sea/oyster.png" onclick="totalbellvalue(this)" id="oyster" data-ooof="1100" class="sea" title="oyster">
+
+	<img src="assets/sea/pearloyster.png" onclick="totalbellvalue(this)" id="pearloyster" data-ooof="2800" class="sea" title="pearloyster">
+
+	<img src="assets/sea/redkingcrab.png" onclick="totalbellvalue(this)" id="redkingcrab" data-ooof="8000" class="sea" title="redkingcrab">
+
+	<img src="assets/sea/scallop.png" onclick="totalbellvalue(this)" id="scallop" data-ooof="1200" class="sea" title="scallop">
+
+	<img src="assets/sea/seaanemone.png" onclick="totalbellvalue(this)" id="seaanemone" data-ooof="500" class="sea" title="seaanemone">
+
+	<img src="assets/sea/seacucumber.png" onclick="totalbellvalue(this)" id="seacucumber" data-ooof="500" class="sea" title="seacucumber">
+
+	<img src="assets/sea/seagrapes.png" onclick="totalbellvalue(this)" id="seagrapes" data-ooof="900" class="sea" title="seagrapes">
+
+	<img src="assets/sea/seapig.png" onclick="totalbellvalue(this)" id="seapig" data-ooof="10000" class="sea" title="seapig"> 
+
+	<img src="assets/sea/seapineapple.png" onclick="totalbellvalue(this)" id="seapineapple" data-ooof="1500" class="sea" title="seapineapple">
+
+	<img src="assets/sea/seaslug.png" onclick="totalbellvalue(this)" id="seaslug" data-ooof="600" class="sea" title="seaslug">
+
+	<img src="assets/sea/seastar.png" onclick="totalbellvalue(this)" id="seastar" data-ooof="500" class="sea" title="seastar">
+
+	<img src="assets/sea/seaurchin.png" onclick="totalbellvalue(this)" id="seaurchin" data-ooof="1700" class="sea" title="seaurchin">
+
+	<img src="assets/sea/seaweed.png" onclick="totalbellvalue(this)" id="seaweed" data-ooof="600" class="sea" title="seaweed">
+
+	<img src="assets/sea/slatepencilurchin.png" onclick="totalbellvalue(this)" id="slatepencilurchin" data-ooof="2000" class="sea" title="slatepencilurchin">
+
+	<img src="assets/sea/snowcrab.png" onclick="totalbellvalue(this)" id="snowcrab" data-ooof="6000" class="sea" title="snowcrab">
+
+	<img src="assets/sea/spidercrab.png" onclick="totalbellvalue(this)" id="spidercrab" data-ooof="12000" class="sea" title="spidercrab">
+
+	<img src="assets/sea/spinylobster.png" onclick="totalbellvalue(this)" id="spinylobster" data-ooof="5000" class="sea" title="spinylobster">
+
+	<img src="assets/sea/spottedgardeneel.png" onclick="totalbellvalue(this)" id="spottedgardeneel" data-ooof="1100" class="sea" title="spottedgardeneel">
+
+	<img src="assets/sea/sweetshrimp.png" onclick="totalbellvalue(this)" id="sweetshrimp" data-ooof="1400" class="sea" title="sweetshrimp">
+
+	<img src="assets/sea/tigerprawn.png" onclick="totalbellvalue(this)" id="tigerprawn" data-ooof="3000" class="sea" title="tigerprawn">
+
+	<img src="assets/sea/turbanshell.png" onclick="totalbellvalue(this)" id="turbanshell" data-ooof="1100" class="sea" title="turbanshell">
+
+	<img src="assets/sea/umbrellaoctopus.png" onclick="totalbellvalue(this)" id="umbrellaoctopus" data-ooof="6000" class="sea" title="umbrellaoctopus">
+
+	<img src="assets/sea/vampiresquid.png" onclick="totalbellvalue(this)" id="vampiresquid" data-ooof="10000" class="sea" title="vampiresquid">
+
+	<img src="assets/sea/venusflowerbasket.png" onclick="totalbellvalue(this)" id="venusflowerbasket" data-ooof="5000" class="sea" title="venusflowerbasket">
+
+	<img src="assets/sea/whelk.png" onclick="totalbellvalue(this)" id="whelk" data-ooof="1000" class="sea" title="whelk">
+
+	<h1>Total Bells: <span id="Total Bells"></span></h1>
+	<input type="button" onclick="reset()" name="Reset" class="button" value="Reset">
+	<h2>Sea Creatures are in alphabetical order, you can hover over top of each creature to see its name.<br>Or if you're on mobile click and hold on the image</h2>
+	<h2>Click on each sea creature to add up its value.</h2>
+</body>
+</html>
